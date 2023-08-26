@@ -97,6 +97,30 @@ img.emoji {
     .portfolio-text-holder .portfolio-img-title, .portfolio-holder .entry-header .entry-title {
     	font-family : Marcellus;
     }
+.blinking-text {
+  display: inline-block;
+  position: relative;
+}
+
+.blinking-text p {
+  font-size: 18px;
+  color: red;
+  animation: blink 2s infinite;
+}
+
+.subtext {
+  font-size: 12px;
+  color: red;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 </style>
 		<script>
 			/* <![CDATA[ */
@@ -279,6 +303,10 @@ var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_valid
 		
 <div class="wp-block-columns">
 <div class="wp-block-column">
+	<div class="blinking-text">
+	  <p>We are hiring</p>
+	  <p class="subtext">Looking for professional SPA therapists for multiple locations</p>
+	</div>
 <h2>Lhasa Hospitality and Wellness Solutions</h2>
 
 
