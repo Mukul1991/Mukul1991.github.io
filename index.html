@@ -97,6 +97,30 @@ img.emoji {
     .portfolio-text-holder .portfolio-img-title, .portfolio-holder .entry-header .entry-title {
     	font-family : Marcellus;
     }
+.blinking-text {
+  display: inline-block;
+  position: relative;
+}
+
+.blinking-text p {
+  font-size: 24px;
+  color: red;
+  animation: blink 1s infinite;
+}
+
+.subtext {
+  font-size: 16px;
+  color: red;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 </style>
 		<script>
 			/* <![CDATA[ */
@@ -296,6 +320,10 @@ new tools and services while maximizing your total growth.</strong></p>
 <em>Jim Corbett | Mashobra | Manali | Kurseong | Lucknow | Kanpur</em></p>
 <p><strong>Upcoming projects:</strong><br>
 <em>Goa | Andamans | Darjeeling | Jibhi</em></p>
+<div class="blinking-text">
+  <p>We are hiring</p>
+  <p class="subtext">Looking for professional SPA therapists for multiple locations</p>
+</div>
 </div>
 		</section><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><iframe src="https://www.youtube.com/embed/4_XFbniENb4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1000" height="315" frameborder="0"></iframe></div></section>	    </div>
 	</div>
